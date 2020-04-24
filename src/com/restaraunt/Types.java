@@ -1,6 +1,6 @@
 package com.restaraunt;
 
-public enum types {
+public enum Types {
     SNACK,
     LANCH,
     BREAKFAST,
