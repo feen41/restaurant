@@ -11,6 +11,7 @@ public abstract class Meal {
         setPrice(price);
         setWeight(weight);
     }
+
     //set price method
     String getPrice() {
         return price;
@@ -20,6 +21,7 @@ public abstract class Meal {
     }
     //set weight method
     String getWeight(){
+
         return weight;
     }
     void setWeight(String weight){
@@ -35,7 +37,7 @@ public abstract class Meal {
     public abstract void chiefPrase();
 
     void serveMeal(){
-        System.out.println("Your " + type + " are served");
+        System.out.println("Your " + type + " is served");
     }
 
     void sell(String price){
