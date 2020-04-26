@@ -19,6 +19,10 @@ public abstract class Meal {
     void setPrice(String price) {
         this.price = price;
     }
+    void addPrice(String overpay){
+        this.price = price + overpay;
+        System.out.println(price);
+    }
     //set weight method
     String getWeight(){
 
@@ -42,7 +46,7 @@ public abstract class Meal {
 
     boolean sell(String price){
         try{
-            System.out.println("You can get this meal for" + price);
+            System.out.println("You can get this meal for " + price);
             receiptCount++;
             return true;
         }catch (Exception e){
