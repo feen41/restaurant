@@ -34,24 +34,27 @@ public abstract class Meal {
     }
 
     // abstract method
-    public abstract void chiefPrase();
+    public abstract void chiefPhrase();
 
     void serveMeal(){
         System.out.println("Your " + type + " is served");
     }
 
-    void sell(String price){
+    boolean sell(String price){
         try{
             System.out.println("You can get this meal for" + price);
             receiptCount++;
+            return true;
         }catch (Exception e){
             e.printStackTrace();
             System.out.println("Out of money");
+            return false;
         }
+
     }
     public void eat(boolean isSpoiled) throws MealIsSpoiled {
         if (isSpoiled) throw new MealIsSpoiled("Sorry, your meal is spoiled");
-        chiefPrase();
+        chiefPhrase();
     }
 
 }
