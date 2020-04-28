@@ -1,4 +1,4 @@
-package com.restaraunt;
+package com;
 
 public class Pizza extends Meal implements Bake{
 
@@ -15,8 +15,6 @@ public class Pizza extends Meal implements Bake{
     public void chiefPhrase(){
         System.out.println("Buon appetito!");
     };
-
-    @Override
 
     public void bake() {
         System.out.println("glurp-glurp-glurp");

@@ -1,4 +1,4 @@
-package com.restaraunt;
+package com;
 
 public class Borscht extends Meal implements Boil{
     boolean addSmetana;
@@ -10,11 +10,10 @@ public class Borscht extends Meal implements Boil{
     public void chiefPhrase(){
         System.out.println("Smachnogo!");
     }
-    public Object boil(){
+    public void boil(){
         if (addSmetana) {
             System.out.println("Ohhh my lovely 'smetana'");
         }
         System.out.println("Yammy");
-        return null;
     }
 }

@@ -1,4 +1,4 @@
-package com.restaraunt;
+package com;
 
 public abstract class Meal {
     private String price;
